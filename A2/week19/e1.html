@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Chmod Calculator</title>
+</head>
+<body>
+    <h2>Comprehensive Chmod Calculator</h2>
+    <div>
+        <strong>Owner:</strong>
+        <input type="checkbox" id="ownerRead"> Read
+        <input type="checkbox" id="ownerWrite"> Write
+        <input type="checkbox" id="ownerExecute"> Execute
+    </div>
+    <div>
+        <strong>Group:</strong>
+        <input type="checkbox" id="groupRead"> Read
+        <input type="checkbox" id="groupWrite"> Write
+        <input type="checkbox" id="groupExecute"> Execute
+    </div>
+    <div>
+        <strong>Others:</strong>
+        <input type="checkbox" id="othersRead"> Read
+        <input type="checkbox" id="othersWrite"> Write
+        <input type="checkbox" id="othersExecute"> Execute
+    </div>
+    <button onclick="calculatePermissions()">Calculate Permissions</button>
+    <p id="result"></p>
+    <script src="chmodCalculator.js"></script>
+</body>
+</html>
